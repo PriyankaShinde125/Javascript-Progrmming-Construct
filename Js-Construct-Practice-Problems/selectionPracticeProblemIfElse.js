@@ -33,3 +33,12 @@ smallest=num5;
 
 console.log("Largest among " + num1 + " , " + num2 + " , " + num3 + " is " + largest);
 console.log("Smallest among " + num1 + " , " + num2 + " , " + num3 + " is " + smallest);
+
+let year=2020;
+let isLeap = false;
+let digitCount =  Math.floor(Math.log10(year) + 1);
+isLeap = ((year % 4 == 0) && (year % 100 != 0)) || (year % 400 == 0);
+if (digitCount == 4) {
+    console.log(isLeap ? year + " is leap year" : year + " is not leap year");
+} else
+   console.log("Invalid year");
