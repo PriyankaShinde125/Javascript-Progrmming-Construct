@@ -11,7 +11,7 @@
             "skipFiles": [
                 "<node_internals>/**"
             ],
-            "program": "${workspaceFolder}\\Js-Construct-Practice-Problems\\If_Else_Ladder\\digitToWord.js",
+            "program": "${workspaceFolder}\\Js-Construct-Practice-Problems\\If_Else_Ladder\\numberToDay.js",
             "console": "integratedTerminal",
         }
     ]
