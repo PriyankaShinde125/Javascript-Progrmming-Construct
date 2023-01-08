@@ -1,0 +1,19 @@
+let stake = 100;
+let bet = 1;
+const MAX_STAKE = stake * 2;
+const WIN_BET = 1;
+let totalNoOfBet = 0;
+let wonBet = 0;
+while (stake < MAX_STAKE) {
+    let betResult = Math.floor(Math.random() * 10) % 2;
+    // console.log(betResult == WIN_BET ? "You won $" + bet : "You lost $" + bet);
+    if (betResult == WIN_BET) {
+        wonBet++;
+        stake += 1;
+    }
+    else
+        stake -= 1;
+    totalNoOfBet++;
+}
+console.log("you made " + totalNoOfBet + " and you won " + wonBet);
+console.log("stake = " + stake);
